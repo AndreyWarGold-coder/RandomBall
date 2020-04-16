@@ -12,6 +12,8 @@ public class Boss1 : MonoBehaviour
     [SerializeField] private GameObject EffectDead;
     [SerializeField] private GameObject Boom;
     [SerializeField] private int HP;
+    [Header("AnimationName")]
+    [SerializeField] private string Anim1;
     public RandomSpawnCoin RSC; 
     void Start()
     {
@@ -27,7 +29,7 @@ public class Boss1 : MonoBehaviour
         }
         if(SecondTime == 20)
         {
-            anim.Play("Boss1_1");
+            anim.Play(Anim1);
         }
         if(SecondTime == 40)
         {

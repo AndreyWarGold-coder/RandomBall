@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 1024706021}
   direct: {x: 0, y: 0}
+  Ps: {fileID: 4719785472991169860}
 --- !u!1001 &1640455521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -250,7 +251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1846034004, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
       propertyPath: m_Name
-      value: MagicRing
+      value: ring
       objectReference: {fileID: 0}
     - target: {fileID: 1846034005, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
       propertyPath: m_LocalPosition.x
@@ -304,6 +305,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0000044966187
       objectReference: {fileID: 0}
+    - target: {fileID: 1052049290, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
+      propertyPath: m_Name
+      value: colo
+      objectReference: {fileID: 0}
     - target: {fileID: 1052049293, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.98
@@ -318,13 +323,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052049293, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.00798816
+      value: 0.009498768
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38400e3b0001eee4d8cc15a7f1ebd435, type: 3}
 --- !u!4 &4719785473785777308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1846034005, guid: 38400e3b0001eee4d8cc15a7f1ebd435,
+    type: 3}
+  m_PrefabInstance: {fileID: 4719785473349055177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4719785472991169860 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1052049293, guid: 38400e3b0001eee4d8cc15a7f1ebd435,
     type: 3}
   m_PrefabInstance: {fileID: 4719785473349055177}
   m_PrefabAsset: {fileID: 0}

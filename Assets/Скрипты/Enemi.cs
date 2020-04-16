@@ -6,6 +6,7 @@ public class Enemi : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D RB;
     [SerializeField] private Vector2 direct;
+    [SerializeField] private ParticleSystem Ps;
     private float Speed;
     private int a;
 
@@ -20,7 +21,10 @@ public class Enemi : MonoBehaviour
             a++;
         }
     }
-
+    public void SetColor(Color color)
+    {
+        Ps.startColor = color;
+    }
     public void Move(Vector2 dir, float speed)
     {
         Speed = speed;

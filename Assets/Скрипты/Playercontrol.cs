@@ -93,6 +93,7 @@ public class Playercontrol : MonoBehaviour
     {
         StartF = F;
         Debug.Log(Screen.currentResolution.height + " Y; X: " + Screen.currentResolution.width);
+        RSC.SetTextVoid("Свайп по экрану, для управления");
     }
 
     

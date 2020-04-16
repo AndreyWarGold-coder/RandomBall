@@ -5,6 +5,8 @@ using UnityEngine;
 public class Boomka : MonoBehaviour
 {
     private Boss1 B;
+    public Boss2 B2;
+    public bool To2;
     [SerializeField] GameObject EffectBoomk;
     public void ItsMe(Boss1 B1)
     {
@@ -15,7 +17,14 @@ public class Boomka : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            B.OnBoom();
+            if(To2 == false)
+            {
+                B.OnBoom();
+            }
+            else
+            {
+                B2.OnBoom();
+            }
             Destroy(Instantiate(EffectBoomk, gameObject.transform.position, Quaternion.identity), 5f);
             Destroy(gameObject);
         }
